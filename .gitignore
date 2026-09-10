@@ -4,6 +4,9 @@
 bin/Debug/
 obj/
 
+# pcf solution solution export
+solution/
+
 # MSBuild Binary and Structured Log
 *.binlog
 

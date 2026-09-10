@@ -12,9 +12,7 @@
 # msbuild output directories
 /bin
 /obj
-
-# SolutionExporter
-/SolutionExport
+/Solution
 
 # MSBuild Binary and Structured Log
 *.binlog
