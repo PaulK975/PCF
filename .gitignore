@@ -3,7 +3,6 @@
 # msbuild output directories (keep bin/Release for packaged component)
 bin/Debug/
 obj/
-tutorials
 
 # MSBuild Binary and Structured Log
 *.binlog
@@ -61,3 +60,4 @@ PCF Gallery Descriptions
 # (including new components added later) is ignored automatically too.
 CLAUDE.md
 PDFGallery-PLAN.md
+tutorials/
