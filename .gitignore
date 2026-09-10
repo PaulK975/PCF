@@ -3,6 +3,7 @@
 # msbuild output directories (keep bin/Release for packaged component)
 bin/Debug/
 obj/
+tutorials
 
 # MSBuild Binary and Structured Log
 *.binlog
