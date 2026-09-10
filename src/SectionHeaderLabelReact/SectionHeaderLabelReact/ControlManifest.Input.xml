@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SectionHeaderLabelReactNS" constructor="SectionHeaderLabelReact" version="0.0.1" display-name-key="SectionHeaderLabelReact" description-key="Simple section header label control to place inside a section. Can behave as a section or subsection label. Optionally align text or show a divider." control-type="virtual" >
+    <external-service-usage enabled="false"/>
+    
+    <property name="Label" display-name-key="Label" description-key="Label text. Either plain text, or a JSON array of languageCode/label pairs, e.g. [{&quot;languageCode&quot;: 1033, &quot;label&quot;: &quot;My Heading&quot;}]. Falls back to the first entry." of-type="Multiple" usage="input" required="true" default-value="[{&quot;languageCode&quot;: 1033, &quot;label&quot;: &quot;My Heading&quot;}]"/>
+    <property name="IsSubsection" display-name-key="Is Subsection" description-key="When true, decreases the label font size by 1px to indicate a subsection heading" of-type="TwoOptions" usage="input" required="false" default-value="false" />
+    <property name="Alignment" display-name-key="Alignment" description-key="Text alignment for the label" of-type="Enum" usage="input" required="true" default-value="left">
+      <value name="Left" display-name-key="Left">left</value>
+      <value name="Center" display-name-key="Center">center</value>
+      <value name="Right" display-name-key="Right">right</value>
+    </property>
+    <property name="DividerShow" display-name-key="Show Divider" description-key="Optionally show a horizontal divider beneath the label" of-type="TwoOptions" usage="input" required="false" default-value="false" />
+    <property name="DividerColor" display-name-key="Divider Color" description-key="Color used for the dividers border-top" of-type="SingleLine.Text" usage="input" required="false" default-value="#e0e0e0" />
+    <property name="MarginTop" display-name-key="Margin Top" description-key="Optionally add a fixed 4px top margin to the label container" of-type="TwoOptions" usage="input" required="false" default-value="false" />
+    <!-- Keep below property - this will enable the control to be used from the form components in the designer. 
+      Without this line the other properties are not editable and do not work
+     -->
+    <property name="NotUsedProperty" display-name-key="NotUsedProperty" description-key="NotUsedProperty description" of-type="SingleLine.Text" usage="bound" required="false" />
+    
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.14.0" />
+      <platform-library name="Fluent" version="9.46.2" />
+    </resources>
+  </control>
+</manifest>
